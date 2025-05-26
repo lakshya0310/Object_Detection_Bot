@@ -1,0 +1,18 @@
+<launch>
+  <!-- Use simulation time -->
+  <arg name="use_sim_time" default="true" />
+
+  <!-- Robot description -->
+  <param name="robot_description" textfile="$(find yolobot_description)/robot/yolobot.urdf" />
+  <param name="use_sim_time" value="$(arg use_sim_time)" />
+
+  <!-- Launch the robot_state_publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+    <param name="robot_description" textfile="$(find yolobot_description)/robot/yolobot.urdf" />
+    <param name="use_sim_time" value="$(arg use_sim_time)" />
+  </node>
+
+  <!-- Launch the spawn_yolobot node -->
+  <node pkg="yolobot_description" type="spawn_yolobot.py" name="spawn_yolobot" output="screen" args="$(find yolobot_description)/robot/yolobot.urdf" />
+</launch>
+

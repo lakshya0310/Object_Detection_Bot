@@ -1,0 +1,14 @@
+<launch>
+    <!-- Launch the joystick node -->
+    <node pkg="joy" type="joy_node" name="joy_node" output="screen" />
+    
+    <!-- Include the world launch file -->
+    <include file="$(find yolobot_gazebo)/launch/start_world_launch.launch" />
+
+    <!-- Include the spawn yolobot launch file -->
+    <include file="$(find yolobot_description)/launch/spawn_yolobot.launch" />
+
+    <!-- Include the robot control launch file -->
+    <include file="$(find yolobot_control)/launch/yolobot_control.launch" />
+</launch>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>yolobot_description</name>
+  <version>0.0.1</version>
+  <description>Package for Yolobot's URDF and description files</description>
+
+  <maintainer email="robotmania@todo.todo">robotmania</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <!-- No additional exports -->
+  </export>
+</package>
+

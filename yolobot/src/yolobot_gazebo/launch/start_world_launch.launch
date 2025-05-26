@@ -1,0 +1,10 @@
+<launch>
+    <!-- Argument for specifying the world file -->
+    <arg name="world" default="$(find yolobot_gazebo)/worlds/yolo_test.world" />
+
+    <!-- Launch Gazebo with the specified world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world)" />
+    </include>
+</launch>
+

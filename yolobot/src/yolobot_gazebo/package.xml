@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>yolobot_gazebo</name>
+  <version>0.0.0</version>
+  <description>Simulation environment for Yolobot in Gazebo.</description>
+
+  <maintainer email="robotmania@todo.todo">robotmania</maintainer>
+  <license>TODO: License declaration</license>
+
+  <!-- Dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>gazebo_ros</depend>
+  <depend>roscpp</depend>
+
+  <!-- Testing dependencies -->
+  <test_depend>rostest</test_depend>
+
+  <export>
+    <!-- Additional export tags as necessary -->
+  </export>
+</package>
+
