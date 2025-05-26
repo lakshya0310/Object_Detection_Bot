@@ -69,7 +69,7 @@ python3 ros_recognition_yolo.py
 Contributions are welcome! Feel free to open issues and pull requests.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Apache 2.0 License.
 
 ## Credits
 - YOLOv5: [https://github.com/ultralytics/yolov5](https://github.com/ultralytics/yolov5)
